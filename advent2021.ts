@@ -1,6 +1,6 @@
-import { part1 as day1part1, part2 as day1part2 } from "./day1"
-import { part1 as day2part1, part2 as day2part2 } from "./day2"
-import { part1 as day3part1, part2 as day3part2 } from "./day3"
+import { part1 as day1part1, part2 as day1part2 } from "./days/day1"
+import { part1 as day2part1, part2 as day2part2 } from "./days/day2"
+import { part1 as day3part1, part2 as day3part2 } from "./days/day3"
 
 const inputPath = "./Inputs/";
 const testMode = false;

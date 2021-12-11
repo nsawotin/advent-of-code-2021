@@ -5,7 +5,10 @@ import { part1 as day4part1, part2 as day4part2 } from "./days/day4"
 import { part1 as day5part1, part2 as day5part2 } from "./days/day5"
 import { part1 as day6part1, part2 as day6part2 } from "./days/day6"
 import { part1 as day7part1, part2 as day7part2 } from "./days/day7"
-
+import { part1 as day8part1, part2 as day8part2 } from "./days/day8"
+import { part1 as day9part1, part2 as day9part2 } from "./days/day9"
+import { part1 as day10part1, part2 as day10part2 } from "./days/day10"
+import { part1 as day11part1, part2 as day11part2 } from "./days/day11"
 
 const inputPath = "./Inputs/";
 const testMode = false;
@@ -25,6 +28,14 @@ export function runAlldays() {
     const day6part2Answer = day6part2(`${inputPath}day6${testMode ? "Test" : ""}.txt`);
     const day7part1Answer = day7part1(`${inputPath}day7${testMode ? "Test" : ""}.txt`);
     const day7part2Answer = day7part2(`${inputPath}day7${testMode ? "Test" : ""}.txt`);
+    const day8part1Answer = day8part1(`${inputPath}day8${testMode ? "Test" : ""}.txt`);
+    const day8part2Answer = day8part2(`${inputPath}day8${testMode ? "Test" : ""}.txt`);
+    const day9part1Answer = day9part1(`${inputPath}day9${testMode ? "Test" : ""}.txt`);
+    const day9part2Answer = day9part2(`${inputPath}day9${testMode ? "Test" : ""}.txt`);
+    const day10part1Answer = day10part1(`${inputPath}day10${testMode ? "Test" : ""}.txt`);
+    const day10part2Answer = day10part2(`${inputPath}day10${testMode ? "Test" : ""}.txt`);
+    const day11part1Answer = day11part1(`${inputPath}day11${testMode ? "Test" : ""}.txt`);
+    const day11part2Answer = day11part2(`${inputPath}day11${testMode ? "Test" : ""}.txt`);
 
 
     console.log(`Testmode: ${testMode}`);
@@ -42,6 +53,14 @@ export function runAlldays() {
     console.log(`Day 6 - Part 2 Answer: ${day6part2Answer}`);
     console.log(`Day 7 - Part 1 Answer: ${day7part1Answer}`);
     console.log(`Day 7 - Part 2 Answer: ${day7part2Answer}`);
+    console.log(`Day 8 - Part 1 Answer: ${day8part1Answer}`);
+    console.log(`Day 8 - Part 2 Answer: ${day8part2Answer}`);
+    console.log(`Day 9 - Part 1 Answer: ${day9part1Answer}`);
+    console.log(`Day 9 - Part 2 Answer: ${day9part2Answer}`);
+    console.log(`Day 10 - Part 1 Answer: ${day10part1Answer}`);
+    console.log(`Day 10 - Part 2 Answer: ${day10part2Answer}`);
+    console.log(`Day 11 - Part 1 Answer: ${day11part1Answer}`);
+    console.log(`Day 11 - Part 2 Answer: ${day11part2Answer}`);
 }
 
 runAlldays();

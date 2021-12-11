@@ -3,7 +3,7 @@ import { part1 as day2part1, part2 as day2part2 } from "./days/day2"
 import { part1 as day3part1, part2 as day3part2 } from "./days/day3"
 import { part1 as day4part1, part2 as day4part2 } from "./days/day4"
 import { part1 as day5part1, part2 as day5part2 } from "./days/day5"
-// TODO: day 6
+import { part1 as day6part1, part2 as day6part2 } from "./days/day6"
 import { part1 as day7part1, part2 as day7part2 } from "./days/day7"
 
 
@@ -21,7 +21,8 @@ export function runAlldays() {
     const day4part2Answer = day4part2(`${inputPath}day4${testMode ? "Test" : ""}.txt`);
     const day5part1Answer = day5part1(`${inputPath}day5${testMode ? "Test" : ""}.txt`);
     const day5part2Answer = day5part2(`${inputPath}day5${testMode ? "Test" : ""}.txt`);
-    // TODO: day 6
+    const day6part1Answer = day6part1(`${inputPath}day6${testMode ? "Test" : ""}.txt`);
+    const day6part2Answer = day6part2(`${inputPath}day6${testMode ? "Test" : ""}.txt`);
     const day7part1Answer = day7part1(`${inputPath}day7${testMode ? "Test" : ""}.txt`);
     const day7part2Answer = day7part2(`${inputPath}day7${testMode ? "Test" : ""}.txt`);
 
@@ -37,7 +38,8 @@ export function runAlldays() {
     console.log(`Day 4 - Part 2 Answer: ${day4part2Answer}`);
     console.log(`Day 5 - Part 1 Answer: ${day5part1Answer}`);
     console.log(`Day 5 - Part 2 Answer: ${day5part2Answer}`);
-    // TODO: day 6
+    console.log(`Day 6 - Part 1 Answer: ${day6part1Answer}`);
+    console.log(`Day 6 - Part 2 Answer: ${day6part2Answer}`);
     console.log(`Day 7 - Part 1 Answer: ${day7part1Answer}`);
     console.log(`Day 7 - Part 2 Answer: ${day7part2Answer}`);
 }

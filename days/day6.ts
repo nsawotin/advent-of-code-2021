@@ -28,13 +28,42 @@ export function part1(path: string): number {
     return total.length;
 }
 
+const fishProducedByDay: Record<number, number> = {};
+
+function FishProduced(initialValue: number, daysLeft: number): number {
+    let fishCount = 1;
+    let value = initialValue;
+    for (let d = daysLeft; d > 0; d--) {
+        if (value === 0) {
+            let newFishDay = d - 1;
+            if (fishProducedByDay[newFishDay]) {
+                fishCount += fishProducedByDay[newFishDay];
+            } else {
+                let numFish = FishProduced(8, newFishDay);
+                fishProducedByDay[newFishDay] = numFish;
+                fishCount += numFish;
+            }
+            value = 6;
+        } else {
+            value--;
+        }
+    }
+    return fishCount;
+}
+
 export function part2(path: string): number {
     let inputs = fs
         .readFileSync(path)
         .toString().split(",")
         .map(Number);
 
-    // TODO
+    const numDays = 256;
+    let totalFish = 0;
 
-    return 0;
+    for (const initialValue of inputs) {
+        let prod = FishProduced(initialValue, numDays);
+        totalFish += prod;
+    }
+
+    return totalFish;
 }

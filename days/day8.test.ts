@@ -4,7 +4,7 @@ const inputPath = "./Inputs/day8Test.txt"
 
 it("calculates part 1 correctly", () => {
     const answer = part1(inputPath);
-    expect (answer).toBe(0);
+    expect (answer).toBe(26);
 })
 
 it("calculates part 2 correctly", () => {
